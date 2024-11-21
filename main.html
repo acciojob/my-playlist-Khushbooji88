@@ -1,68 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=“en”>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Playlist</title>
-    <style>
-        body {
-            background-color: rgb(204, 204, 204);
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-        }
-        .player_one, .player_two {
-            background-color: rgb(255, 255, 255);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            width: 80%;
-        }
-        a {
-            text-decoration-line: none;
-        }
-    </style>
+<meta charset=“UTF-8”>
+<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+<title>Web Page Development Task</title>
+<style>
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid black;
+padding: 10px;
+}
+th {
+background-color: #f2f2f2;
+}
+</style>
 </head>
 <body>
-
-    <!-- Heading 1 -->
-    <h1>My Playlist</h1>
-
-    <!-- Heading 2 for Now Playing -->
-    <h2>Now Playing...</h2>
-
-    <!-- Heading 2 for MP3 songs -->
-    <h2>MP3 Songs</h2>
-
-    <!-- Playlist of songs -->
-    <div>
-        <ul>
-            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
-            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
-            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3</a></li>
-            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
-            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
-        <!-- Missing closing tag for <ul> -->
-    </div>
-
-    <!-- Video Player -->
-    <div class="player_one">
-        <video controls>
-            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!-- Audio Player -->
-    <div class="player_two">
-        <audio controls>
-            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
-            Your browser does not support the audio tag.
-        </audio>
-    </div>
-
+<h1>Develop a Web Page with Specific Requirements</h1>
+<h2>Preview:</h2>
+<img src=“https://storage.googleapis.com/acciojob-open-file-collections/188dbdf0-6169-4a03-b03c-f8a9b9111f46_Screenshot 2023-08-16 at 6.59.07 PM.png” />
+<p>Your task is to create a web page that meets the following requirements:</p>
+<h2>Headings</h2>
+<p>Create the following headings with the specified content and styles:</p>
+<table>
+<tr><th>Tag</th><th>Content</th><th>Style</th></tr>
+<tr><td>h1</td><td>My Playlist</td><td>text-align: center</td></tr>
+<tr><td>h2</td><td>Now Playing…</td><td>text-align: center</td></tr>
+<tr><td>h2</td><td>MP3 songs</td><td>text-align: center</td></tr>
+</table>
+<h2>Songs Playlist</h2>
+<p>Create a playlist of songs using the following tags and attributes:</p>
+<table>
+<tr><th>Tag</th><th>Attribute</th><th>Style</th></tr>
+<tr><td>ul</td><td>-</td><td>-</td></tr>
+<tr><td>li (5 times)</td><td>-</td><td>list-style-type: none</td></tr>
+<tr><td>a</td><td>target: <code>_blank</code></td><td>text-decoration-line: none</td></tr>
+</table>
+<h2>Video and Audio Player</h2>
+<p>Create video and audio players using the specified tags and attributes. Apply specific styles to container classes:</p>
+<table>
+<tr><th>Tag</th><th>Attribute</th><th>Container Class</th><th>Style</th></tr>
+<tr><td>video/audio</td><td>controls</td><td>.player_one/.player_two</td><td>background-color: rgb(255, 255, 255); padding; border-radius</td></tr>
+<tr><td>source</td><td>src, type</td><td>-</td><td>-</td></tr>
+</table>
+<h2>Additional CSS</h2>
+<p>Apply additional styles to specific tags:</p>
+<table>
+<tr><th>Tag</th><th>Style</th></tr>
+<tr><td>body</td><td>background-color: rgb(204, 204, 204)</td></tr>
+</table>
+<h2>Resources/Links</h2>
+<table>
+<tr><th>Tag</th><th>Link</th></tr>
+<tr><td>Audio</td><td>https://www.pagalworld.com.se/files/download/id/64630</td></tr>
+<tr><td>Video</td><td>https://www.w3schools.com/tags/movie.mp4</td></tr>
+</table>
+<h2>Required Tags</h2>
+<p>Ensure that the page includes at least one of each of the following tags: h1, div, ul, li, a, h2, video, source, audio</p>
 </body>
 </html>
