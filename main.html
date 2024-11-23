@@ -3,74 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page Development Task</title>
+    <title>My Playlist</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
         body {
             background-color: rgb(204, 204, 204);
         }
-        .player_one, .player_two {
-            background-color: rgb(255, 255, 255);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            width: 80%;
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
         }
         a {
             text-decoration-line: none;
         }
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: fit-content;
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">My Playlist</h1>
-    <h2 style="text-align: center;">Now Playing…</h2>
-    <h2 style="text-align: center;">MP3 songs</h2>
-
-    <h2>Songs Playlist</h2>
-    <p>Create a playlist of songs using the following tags and attributes:</p>
-    <table>
-        <tr><th>Tag</th><th>Attribute</th><th>Style</th></tr>
-        <tr><td>ul</td><td>-</td><td>-</td></tr>
-        <tr><td>li (5 times)</td><td>-</td><td>list-style-type: none</td></tr>
-        <tr><td>a</td><td>target: <code>_blank</code></td><td>text-decoration-line: none</td></tr>
-    </table>
-
-    <h2>Video and Audio Player</h2>
-    <p>Create video and audio players using the specified tags and attributes. Apply specific styles to container classes:</p>
-    <table>
-        <tr><th>Tag</th><th>Attribute</th><th>Container Class</th><th>Style</th></tr>
-        <tr><td>video/audio</td><td>controls</td><td>.player_one/.player_two</td><td>background-color: rgb(255, 255, 255); padding; border-radius</td></tr>
-        <tr><td>source</td><td>src, type</td><td>-</td><td>-</td></tr>
-    </table>
-
-    <h2>Additional CSS</h2>
-    <p>Apply additional styles to specific tags:</p>
-    <table>
-        <tr><th>Tag</th><th>Style</th></tr>
-        <tr><td>body</td><td>background-color: rgb(204, 204, 204)</td></tr>
-    </table>
-
-    <h2>Resources/Links</h2>
-    <table>
-        <tr><th>Tag</th><th>Link</th></tr>
-        <tr><td>Audio</td><td><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Download Audio</a></td></tr>
-        <tr><td>Video</td><td><a href="https://www.w3schools.com/tags/movie.mp4" target="_blank">Watch Video</a></td></tr>
-    </table>
-
-    <h2>Required Tags</h2>
-    <p>Ensure that the page includes at least one of each of the following tags: h1, div, ul, li, a, h2, video, source, audio</p>
-
-    <!-- Playlist of songs -->
+    <h1>My Playlist</h1>
+    <h2>Now Playing...</h2>
+    <div class="player_one">
+        <video controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <h2>MP3 songs</h2>
     <ul>
         <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
         <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
@@ -78,19 +46,9 @@
         <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
         <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
     </ul>
-
-    <!-- Video Player -->
-    <div class="player_one">
-        <video controls>
-            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!-- Audio Player -->
     <div class="player_two">
         <audio controls>
-            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp3">
             Your browser does not support the audio tag.
         </audio>
     </div>
